@@ -1,0 +1,161 @@
+element.style {}
+
+body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-body);
+    font-feature-settings: "ss01", "cv11";
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizelegibility;
+}
+
+* {
+    border-color: var(--color-border);
+}
+
+*,
+:after,
+:before,
+::backdrop {
+    box-sizing: border-box;
+    border: 0 solid;
+    margin: 0;
+    padding: 0;
+}
+
+user agent stylesheet body {
+    display: block;
+    margin: 8px;
+}
+
+:root {
+    --radius: 0rem;
+    --background: oklch(99.5% 0 0);
+    --foreground: oklch(12% 0 0);
+    --card: oklch(99.5% 0 0);
+    --card-foreground: oklch(12% 0 0);
+    --popover: oklch(99.5% 0 0);
+    --popover-foreground: oklch(12% 0 0);
+    --primary: oklch(12% 0 0);
+    --primary-foreground: oklch(99.5% 0 0);
+    --secondary: oklch(96% 0 0);
+    --secondary-foreground: oklch(12% 0 0);
+    --muted: oklch(95.5% 0 0);
+    --muted-foreground: oklch(45% 0 0);
+    --accent: oklch(92% 0 0);
+    --accent-foreground: oklch(12% 0 0);
+    --destructive: oklch(55% .22 27);
+    --destructive-foreground: oklch(99.5% 0 0);
+    --border: oklch(90% 0 0);
+    --input: oklch(90% 0 0);
+    --ring: oklch(12% 0 0);
+    --font-display: "Helvetica Neue", "Inter", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+    --font-body: "Helvetica Neue", "Inter", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+    --chart-1: oklch(64.6% .222 41.116);
+    --chart-2: oklch(60% .118 184.704);
+    --chart-3: oklch(39.8% .07 227.392);
+    --chart-4: oklch(82.8% .189 84.429);
+    --chart-5: oklch(76.9% .188 70.08);
+    --sidebar: oklch(98.4% .003 247.858);
+    --sidebar-foreground: oklch(12.9% .042 264.695);
+    --sidebar-primary: oklch(20.8% .042 265.755);
+    --sidebar-primary-foreground: oklch(98.4% .003 247.858);
+    --sidebar-accent: oklch(96.8% .007 247.896);
+    --sidebar-accent-foreground: oklch(20.8% .042 265.755);
+    --sidebar-border: oklch(92.9% .013 255.508);
+    --sidebar-ring: oklch(70.4% .04 256.788);
+}
+
+html,
+:host {
+    -webkit-text-size-adjust: 100%;
+    tab-size: 4;
+    line-height: 1.5;
+    font-family: var(--default-font-family);
+    font-feature-settings: var(--default-font-feature-settings, normal);
+    font-variation-settings: var(--default-font-variation-settings, normal);
+    -webkit-tap-highlight-color: transparent;
+}
+
+:root,
+:host {
+    --font-sans: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    --color-black: #000;
+    --spacing: .25rem;
+    --container-xs: 20rem;
+    --container-sm: 24rem;
+    --container-md: 28rem;
+    --container-lg: 32rem;
+    --container-2xl: 42rem;
+    --text-xs: .75rem;
+    --text-xs--line-height: calc(1 / .75);
+    --text-sm: .875rem;
+    --text-sm--line-height: calc(1.25 / .875);
+    --text-base: 1rem;
+    --text-base--line-height: calc(1.5 / 1);
+    --text-lg: 1.125rem;
+    --text-lg--line-height: calc(1.75 / 1.125);
+    --text-xl: 1.25rem;
+    --text-xl--line-height: calc(1.75 / 1.25);
+    --text-2xl: 1.5rem;
+    --text-2xl--line-height: calc(2 / 1.5);
+    --text-7xl: 4.5rem;
+    --text-7xl--line-height: 1;
+    --font-weight-extralight: 200;
+    --font-weight-light: 300;
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+    --tracking-tight: -.025em;
+    --tracking-widest: .1em;
+    --leading-relaxed: 1.625;
+    --ease-in-out: cubic-bezier(.4, 0, .2, 1);
+    --animate-pulse: pulse 2s cubic-bezier(.4, 0, .6, 1) infinite;
+    --aspect-video: 16 / 9;
+    --default-transition-duration: .15s;
+    --default-transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+    --default-font-family: var(--font-sans);
+    --default-mono-font-family: var(--font-mono);
+    --color-background: var(--background);
+    --color-foreground: var(--foreground);
+    --color-border: var(--border);
+}
+
+*,
+:after,
+:before,
+::backdrop {
+    box-sizing: border-box;
+    border: 0 solid;
+    margin: 0;
+    padding: 0;
+}
+
+*,
+:after,
+:before,
+::backdrop {
+    box-sizing: border-box;
+    border: 0 solid;
+    margin: 0;
+    padding: 0;
+}
+
+*,
+:after,
+:before,
+::backdrop {
+    box-sizing: border-box;
+    border: 0 solid;
+    margin: 0;
+    padding: 0;
+}
+
+::selection {
+    background-color: var(--color-foreground);
+    color: var(--color-background);
+}
+
+::selection {}

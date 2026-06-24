@@ -1,0 +1,69 @@
+@import "tailwindcss";
+
+/*
+ * Design tokens recovered from the original Lovable export (style.css :root).
+ * A neutral, achromatic palette (oklch with zero chroma) on a near-white page,
+ * sharp corners (radius 0), and a Helvetica Neue / Inter system type stack.
+ * Mapping these to Tailwind v4 theme variables makes every utility lifted from
+ * the original markup (bg-background, text-muted-foreground, border-border,
+ * bg-background/85, text-foreground/80, ...) resolve exactly as before.
+ */
+@theme {
+  --color-background: oklch(99.5% 0 0);
+  --color-foreground: oklch(12% 0 0);
+  --color-card: oklch(99.5% 0 0);
+  --color-card-foreground: oklch(12% 0 0);
+  --color-popover: oklch(99.5% 0 0);
+  --color-popover-foreground: oklch(12% 0 0);
+  --color-primary: oklch(12% 0 0);
+  --color-primary-foreground: oklch(99.5% 0 0);
+  --color-secondary: oklch(96% 0 0);
+  --color-secondary-foreground: oklch(12% 0 0);
+  --color-muted: oklch(95.5% 0 0);
+  --color-muted-foreground: oklch(45% 0 0);
+  --color-accent: oklch(92% 0 0);
+  --color-accent-foreground: oklch(12% 0 0);
+  --color-destructive: oklch(55% 0.22 27);
+  --color-destructive-foreground: oklch(99.5% 0 0);
+  --color-border: oklch(90% 0 0);
+  --color-input: oklch(90% 0 0);
+  --color-ring: oklch(12% 0 0);
+
+  --radius: 0rem;
+
+  --font-sans: "Helvetica Neue", "Inter", system-ui, -apple-system, "Segoe UI",
+    Arial, sans-serif;
+  --font-display: "Helvetica Neue", "Inter", system-ui, -apple-system,
+    "Segoe UI", Arial, sans-serif;
+}
+
+/* Default every border to the theme border color, matching the original reset. */
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+    font-feature-settings: "ss01", "cv11";
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  ::selection {
+    background-color: var(--color-foreground);
+    color: var(--color-background);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
