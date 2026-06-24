@@ -23,13 +23,12 @@ export default function Resume() {
         </div>
 
         <h2 className="mt-10 text-[clamp(2rem,6vw,5rem)] font-light leading-[1] tracking-[-0.03em]">
-          Software engineer
+          Mathematician and
           <br />
-          working across
+          passionate educator
           <br />
-          <span className="italic font-extralight">
-            code, place, and people.
-          </span>
+          turned{" "}
+          <span className="italic font-extralight">software engineer.</span>
         </h2>
 
         {/* Experience */}

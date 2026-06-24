@@ -4,18 +4,15 @@ export default function Hero() {
       <div className="mx-auto max-w-[1600px] px-6 pb-20 pt-24 sm:px-10 sm:pb-32 sm:pt-40">
         <div className="flex items-baseline justify-between text-[11px] uppercase tracking-[0.2em] text-muted-foreground">
           <span>Jason De Leon — Software Engineer</span>
-          <span>2026</span>
         </div>
 
         <div className="mt-10 grid grid-cols-12 gap-6 sm:gap-10">
           <h1 className="col-span-12 text-[clamp(2.75rem,9vw,9rem)] font-light leading-[0.95] tracking-[-0.04em] sm:col-span-8">
             Building tools
             <br />
-            at the edge of
+            where <span className="italic font-extralight">math, maps, and</span>
             <br />
-            <span className="italic font-extralight">product, place,</span>
-            <br />
-            and people.
+            <span className="italic font-extralight">people</span> meet.
           </h1>
 
           <figure className="col-span-12 flex flex-col gap-4 sm:col-span-4">
@@ -37,7 +34,7 @@ export default function Hero() {
         <div className="mt-16 grid grid-cols-1 gap-10 border-t border-border pt-10 sm:grid-cols-3">
           <p className="col-span-1 max-w-md text-sm leading-relaxed text-muted-foreground sm:col-span-2">
             A small archive of work across AI-native SaaS, GIS research, and
-            full-stack engineering — each project chosen for its clarity of
+            full-stack engineering. Each project chosen for its clarity of
             intent.
           </p>
           <div className="flex items-end justify-start sm:justify-end">

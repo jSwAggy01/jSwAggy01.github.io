@@ -41,7 +41,7 @@ export const projects: Project[] = [
     role: "Co-Launch · E-Sign Lead",
     year: "2026",
     description:
-      "Co-launched an AI-native SaaS product suite with an integrated knowledge base. Owned end-to-end development of the E-Sign tool — from architecture to release.",
+      "Co-launched an AI-native SaaS product suite with an integrated knowledge base. Owned end-to-end development of the E-Sign tool, from architecture to release.",
     href: "https://onekit.co",
   },
   {
@@ -61,7 +61,7 @@ export const projects: Project[] = [
     role: "Design · Build",
     year: "2026",
     description:
-      "A static gallery built in vanilla HTML, CSS, and JavaScript — a quiet stage for contemporary Filipino musical artists.",
+      "A static gallery built in vanilla HTML, CSS, and JavaScript. A quiet stage for contemporary Filipino musical artists.",
     href: "https://jswaggy01.github.io/filam-artists/",
   },
   {
@@ -71,7 +71,7 @@ export const projects: Project[] = [
     role: "Engineering",
     year: "2026",
     description:
-      "A full-stack GIS application mapping third places across the Inland Empire — built with JavaScript and Supabase.",
+      "A full-stack GIS application mapping third places across the Inland Empire, built with JavaScript and Supabase.",
     href: "https://jswaggy01.github.io/Community-Hot-Spots/",
   },
 ];
