@@ -92,7 +92,14 @@ export default function Footer() {
 
         <div className="mt-24 flex items-end justify-between gap-6 text-[11px] uppercase tracking-[0.2em] text-muted-foreground">
           <span>© 2026 — All rights reserved</span>
-          <span>Made with care</span>
+          <a
+            href="https://youtu.be/oH0MwGla_LQ?si=wdyT5LZ_emgPqeXu"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:opacity-60"
+          >
+            It's just math
+          </a>
         </div>
       </div>
     </footer>
